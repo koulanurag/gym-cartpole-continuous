@@ -27,5 +27,7 @@ def test_continuous_action(env):
     # step a cont. action in the env.
     env.reset()
     obs, reward, done, info = env.step(env.action_space.sample())
+    assert env.observation_space.contains(obs)
 
+    obs, reward, done, info = env.step([1.0])
     assert env.observation_space.contains(obs)

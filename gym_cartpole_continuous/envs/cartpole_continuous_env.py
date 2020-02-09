@@ -21,7 +21,7 @@ class CartPoleContinuousEnv(CartPoleEnv):
         # force = self.force_mag if action == 1 else -self.force_mag
 
         # Continuous Case:
-        force = self.force_mag * action
+        force = self.force_mag * action[0]
 
         # Note: everything below this is same as gym's cartpole step fun.
         state = self.state

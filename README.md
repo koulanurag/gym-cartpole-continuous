@@ -1,6 +1,8 @@
 # gym-cartpole-continuous
 It's a light wrapper around gym's [CartPole](https://github.com/openai/gym/blob/master/gym/envs/classic_control/cartpole.py) env. modified to have continuous action space `(one-line change)`
 
+![Build Status](https://travis-ci.com/koulanurag/gym-cartpole-continuous.svg?branch=master)
+
 ## Installation
 ```bash
 cd gym-cartpole-continuous
